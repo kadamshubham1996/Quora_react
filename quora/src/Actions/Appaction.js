@@ -4,6 +4,7 @@ import Reflux from 'reflux';
 const AppActions=Reflux.createActions([
     'showLoginPopup',
     'showCancelPopup',
-    'Login'
+    'Login',
+    'showRegistorPopup'
 ]);
 export default AppActions

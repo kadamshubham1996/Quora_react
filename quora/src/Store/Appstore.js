@@ -14,7 +14,10 @@ const Appstore = Reflux.createStore({
     },
     onLogin(username,password){
         alert("username :"+username+"password"+password);
-       }
+    },
+    onShowRegistorPopup(username,password,fullname,mobileno,gender){
+        alert("username"+username+"password"+password+"fullname"+fullname+"mobileno"+mobileno+"gender"+gender)
+    }
 });
 
 export default Appstore;

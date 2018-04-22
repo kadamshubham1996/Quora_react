@@ -36,6 +36,7 @@ class App extends React.Component {
     }
   }
   getLoadingData(){
+    
     var feed = {
       "Question": [
         {
@@ -58,7 +59,8 @@ class App extends React.Component {
             }
           ],
           "questionString": "How can I practice coding (computer programming) daily?",
-          "userId": "test1"
+          "userId": "test1",
+          "questionId":"q1"
         },
         {
           "all_answers": [
@@ -88,7 +90,8 @@ class App extends React.Component {
             }
           ],
           "questionString": "What are some tricks to learn Java quickly?",
-          "userId": "test2"
+          "userId": "test2",
+          "questionId":"q2"
         },
         {
           "all_answers": [
@@ -142,12 +145,14 @@ class App extends React.Component {
             }
           ],
           "questionString": "Who am i?",
-          "userId": "test1"
+          "userId": "test1",
+          "questionId":"q3"
         },
         {
           "all_answers": [],
           "questionString": "Who am i?",
-          "userId": "test2"
+          "userId": "test2",
+          "questionId":"q4"
         }
       ]
     }
@@ -158,7 +163,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    setTimeout(this.getLoadingData,4000)
+    setTimeout(this.getLoadingData,1000)
   }
   
   render() {
